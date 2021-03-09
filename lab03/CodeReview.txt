@@ -12,3 +12,6 @@ Code Review
 - too many "magic numbers" (hard-coded values)
 - is t limited to {1, 2, 3, 4} or could it be bigger?
 - there are no validations
+
+3. Single responsibility & keep it simple stupid
+- outsource intermediary computations into new simple functions
