@@ -15,3 +15,12 @@ Code Review
 
 3. Single responsibility & keep it simple stupid
 - outsource intermediary computations into new simple functions
+
+4. reduce the complexity of existing functions - single responsibility & keep it simple and stupid
+- reduce repeating patterns
+- remove the switch by refactoring the first case
+
+5. single responsibility & dependency inversion
+- refactor the custom exceptions
+- remove the dependency on validations
+- remove the dependency on values and operations managed by marketing
