@@ -39,4 +39,17 @@ public class DbConnection {
 
         return instance;
     }
+
+//     either the above or this but actually please don't do this
+    public static DbConnection getInstance(String socket, String schema) throws Exception {
+        if (instance == null) {
+            instance = new DbConnection(socket, schema);
+        }
+//         throw an error if they try to open a connection to a different database
+        if (!socket.equals(instance.socket) || !schema.equals(instance.schema)) {
+            throw new Exception("You know what you've done.");
+        }
+
+        return instance;
+    }
 }
